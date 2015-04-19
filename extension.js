@@ -40,7 +40,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("/me BACON É A VADIA DA TUA MÃE, QUER BAN SEU RESTO DE ABORTO?");
+                    API.sendChat("/me BACON É A VADIA DA TUA MÃE, QUER BAN SEU RESTO DE ABORTO?.");
                 }
             }
         };
@@ -55,7 +55,7 @@
         botName: "KELPINSKI BOT",
         language: "portuguese",
         startupCap: 1, // 1-200
-        startupVolume: 0, // 0-100
+        startupVolume: 15, // 0-100
         startupEmoji: true, // true or false
         chatLink: "https://rawgit.com/" + fork + "/basicBot/master/lang/pt.json",
         maximumAfk: 20,

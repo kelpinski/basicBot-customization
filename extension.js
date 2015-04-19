@@ -1,6 +1,6 @@
 (function () {
     //Link location of your fork so you don't have to modify so many things.
-    var fork = "Yemasthui";
+    var fork = "kelpinski";
 		
     //Define our function responsible for extending the bot.
     function extend() {
@@ -18,7 +18,6 @@
         /*
          Extend the bot here, either by calling another function or here directly.
          Model code for a bot command:
-
          bot.commands.commandCommand = {
          command: 'cmd',
          rank: 'user/bouncer/mod/manager',
@@ -31,7 +30,6 @@
          }
          }
          }
-
          */
 
         bot.commands.baconCommand = {
@@ -42,7 +40,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("/me Bacon!!!");
+                    API.sendChat("/me BACON É O CARALHO FILHO DA PUTA, VAI TOMAR BAN SE FICAR USANDO ESSA PORRA!!!");
                 }
             }
         };
@@ -51,61 +49,57 @@
         bot.loadChat();
 
     }
-
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "basicBot",
-        language: "english",
+        botName: "KELPINSKI BOT",
+        language: "portuguese",
         startupCap: 1, // 1-200
         startupVolume: 0, // 0-100
-        startupEmoji: false, // true or false
-        cmdDeletion: true,
-        chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
-        maximumAfk: 120,
-        afkRemoval: true,
-        maximumDc: 60,
-        bouncerPlus: true,
+        startupEmoji: true, // true or false
+        chatLink: "https://rawgit.com/" + fork + "/basicBot/master/lang/pt.json",
+        maximumAfk: 20,
+        afkRemoval: false,
+        maximumDc: 5,
+        bouncerPlus: false,
         blacklistEnabled: true,
         lockdownEnabled: false,
         lockGuard: false,
         maximumLocktime: 10,
-        cycleGuard: true,
+        cycleGuard: false,
         maximumCycletime: 10,
         voteSkip: false,
-        voteSkipLimit: 10,
+        voteSkipLimit: 8,
         timeGuard: true,
-        maximumSongLength: 10,
+        maximumSongLength: 7,
         autodisable: true,
-        commandCooldown: 30,
+        commandCooldown: 5,
         usercommandsEnabled: true,
-        lockskipPosition: 3,
+        lockskipPosition: 1,
         lockskipReasons: [
-            ["theme", "This song does not fit the room theme. "],
-            ["op", "This song is on the OP list. "],
-            ["history", "This song is in the history. "],
-            ["mix", "You played a mix, which is against the rules. "],
-            ["sound", "The song you played had bad sound quality or no sound. "],
-            ["nsfw", "The song you contained was NSFW (image or sound). "],
-            ["unavailable", "The song you played was not available for some users. "]
+            ["theme", "Bota outra - fora do tema/evento"],
+            ["op", "Essa porra toca demais! porra!, HAIL SATAN"],
+            ["history", "Ja tocou essa merda jumento, olha o caralho do historico, ALLAHU AKBAAR"],
+            ["nsfw", "Oba, tetinhas, mas se fodeu vou pular, ALAHU AKBAAAAAAR"],
+            ["erro", "Video indisponivel, como sou bonzinho, vou te jogar em 2 <3"]
         ],
         afkpositionCheck: 15,
         afkRankCheck: "ambassador",
-        motdEnabled: false,
+        motdEnabled: true,
         motdInterval: 5,
-        motd: "Temporary Message of the Day",
-        filterChat: true,
+        motd: "Entrem no nosso website e leia as regras/conheca a staff > http://italocjs.wix.com/panelinharadioativa",
+        filterChat: false,
         etaRestriction: false,
-        welcome: true,
+        welcome: false,
         opLink: null,
-        rulesLink: null,
+        rulesLink: "http://italocjs.wix.com/panelinharadioativa#!regras/c10fk",
         themeLink: null,
         fbLink: null,
         youtubeLink: null,
-        website: null,
+        website: "http://italocjs.wix.com/panelinharadioativa",
         intervalMessages: [],
         messageInterval: 5,
-        songstats: true,
+        songstats: false,
         commandLiteral: "!",
         blacklists: {
             NSFW: "https://rawgit.com/" + fork + "/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
@@ -114,6 +108,6 @@
     }));
 
     //Start the bot and extend it when it has loaded.
-    $.getScript("https://rawgit.com/Yemasthui/basicBot/master/basicBot.js", extend);
+    $.getScript("https://rawgit.com/kelpinski/basicBot/master/basicBot.js", extend);
 
 }).call(this);

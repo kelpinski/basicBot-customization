@@ -40,7 +40,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("/me BACON É O CARALHO FILHO DA PUTA, VAI TOMAR BAN SE FICAR USANDO ESSA PORRA!!!");
+                    API.sendChat("/me BACON É A VADIA DA TUA MÃE, QUER BAN SEU RESTO DE ABORTO?");
                 }
             }
         };
@@ -77,11 +77,11 @@
         usercommandsEnabled: true,
         lockskipPosition: 1,
         lockskipReasons: [
-            ["theme", "Bota outra - fora do tema/evento"],
-            ["op", "Essa porra toca demais! porra!, HAIL SATAN"],
-            ["history", "Ja tocou essa merda jumento, olha o caralho do historico, ALLAHU AKBAAR"],
+            ["theme", "Mano, não é esse estilo cara..."],
+            ["op", "É DO CARALHO"],
+            ["history", "Olha a merda do histórico, isso já tocou seu burro"],
             ["nsfw", "Oba, tetinhas, mas se fodeu vou pular, ALAHU AKBAAAAAAR"],
-            ["erro", "Video indisponivel, como sou bonzinho, vou te jogar em 2 <3"]
+            ["erro", "Não deu pra tocar essa caralha, se fode ae"]
         ],
         afkpositionCheck: 15,
         afkRankCheck: "ambassador",
@@ -90,7 +90,7 @@
         motd: "Entrem no nosso website e leia as regras/conheca a staff > http://italocjs.wix.com/panelinharadioativa",
         filterChat: false,
         etaRestriction: false,
-        welcome: false,
+        welcome: true,
         opLink: null,
         rulesLink: "http://italocjs.wix.com/panelinharadioativa#!regras/c10fk",
         themeLink: null,
